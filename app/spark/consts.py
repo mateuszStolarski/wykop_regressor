@@ -1,0 +1,7 @@
+APP_NAME = 'Regression'
+MASTER = 'local'
+LOG_LEVEL = 'ERROR'
+INPUT_STRING = 'spark.mongodb.input.uri'
+OUTPUT_STRING = 'spark.mongodb.output.uri'
+CONNECTION_STRING = 'mongodb://root:root@172.21.244.176:27017/Crawlers.Movies/?authSource=admin'
+MODEL_PATH = './models'

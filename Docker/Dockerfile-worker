@@ -1,0 +1,15 @@
+FROM python:3.9.10-slim-buster
+
+ENV TYPE="worker"
+ENV LC_ALL=C.UTF-8
+ENV LANG=C.UTF-8
+ENV TZ="Europe/Warsaw"
+RUN echo $TZ > /etc/timezone
+
+WORKDIR /app/
+ADD ../celery_app/ ./celery_app/
+
+WORKDIR /app/celery_app
+RUN pip3 install -r requirements.txt
+
+ENTRYPOINT celery --app=tasks $TYPE -l INFO

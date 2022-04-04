@@ -1,0 +1,9 @@
+beautifulsoup4
+celery
+pymongo
+pandas
+numpy
+prometheus-client
+langdetect
+requests
+redis

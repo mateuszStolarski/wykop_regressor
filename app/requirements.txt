@@ -1,0 +1,13 @@
+sqlalchemy
+pymysql
+fastapi
+uvicorn[standard]
+torch
+pandas
+numpy
+tqdm
+sklearn
+pickle5
+transformers
+tensorboard
+pyspark
